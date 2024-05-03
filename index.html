@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras Vue</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>FROSTUMHANG</h1>
+    </header>
+    <main id="app">
+      <aside id="carrito">
+        <div class="top">
+          <div class="carritoTitulo">
+            <i class="fas fa-shopping-cart"></i>
+            <h2>Carrito</h2>
+          </div>
+          <h2 class="carritoTotal">$ {{ totalPrecio }}</h2>
+        </div>
+        <div class="carritoContenido">
+          <div class="carritoSinItem" v-if="carrito.length === 0">
+            <i class="fas fa-times"></i>
+            <p>No hay productos en el carrito</p>
+          </div>
+          <div v-else>
+            <ul class="carritoProductos">
+              <li v-for="(producto, index) in carrito" class="carritoProducto">
+                <div class="carritoProductoInformacion">
+                  <p class="carritoProductoNombre" v-text="producto.nombre"></p>
+                  <p class="carritoProductoPrecio">$ {{ producto.precio }}</p>
+                  <p class="carritoProductoPrecio">x{{producto.cantidad}}</p>
+                  <button class="carritoProductoEliminar" v-on:click="eliminarProducto(index)">Eliminar</button>
+                </div>
+              </li>
+            </ul>
+            <div class="bottom">
+              <button class="carritoBoton" v-on:click="vaciarCarrito">Check Out</button>
+              <button class="carritoBoton" v-on:click="vaciarCarrito">Vaciar Carrito</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section id="productos">
+        <div>
+          <ul class="Listaproductos">
+            <li v-for="(producto, index) in productos" class="producto">
+              <img v-bind:src="producto.img" v-bind:alt="producto.nombre" />
+              <p class="productoTitulo">{{ producto.nombre }}</p>
+              <p class="productoPrecio">$ {{ producto.precio }}</p>
+              <button v-on:click="agregarAlCarrito(producto)" class="productoBoton">
+                Agregar al carrito
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

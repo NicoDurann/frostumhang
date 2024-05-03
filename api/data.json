@@ -1,0 +1,77 @@
+{
+  "message": "GET Data",
+  "data": [
+    {
+      "id": 1,
+      "img": "img/CAMPERA_INFLADA_SIRIUS_GREEN.webp",
+      "nombre": "CAMPERA INFLADA SIRIUS GREEN",
+      "precio": 142788
+    },
+    {
+      "id": 2,
+      "img": "img/CAMPERA_PUFFER_TRINITY_BLACK.webp",
+      "nombre": "CAMPERA PUFFER TRINITY BLACK",
+      "precio": 135988
+    },
+    {
+      "id": 3,
+      "img": "img/CAMPERA_INFLADA_ARGON_GREEN.webp",
+      "nombre": "CAMPERA INFLADA ARGON GREEN",
+      "precio": 131454
+    },
+    {
+      "id": 4,
+      "img": "img/CAMPERA_PUFFER_HOLY_ALMOND.webp",
+      "nombre": "CAMPERA PUFFER HOLY ALMOND",
+      "precio": 98242
+    },
+    {
+      "id": 5,
+      "img": "img/CAMPERA_PUFFER_THOR_BLACK.webp",
+      "nombre": "CAMPERA PUFFER THOR BLACK",
+      "precio": 159990
+    },
+    {
+      "id": 6,
+      "img": "img/CAMPERA_INFLADA_AIOROS_GREEN.webp",
+      "nombre": "CAMPERA INFLADA AIOROS GREEN",
+      "precio": 89992
+    },
+    {
+      "id": 7,
+      "img": "img/CAMPERA_INFLADA_MC_FLY_GREEN.webp",
+      "nombre": "CAMPERA INFLADA MC FLY GREEN",
+      "precio": 119990
+    },
+    {
+      "id": 8,
+      "img": "img/CAMPERA_PUFFER_JUNO_BLACK.webp",
+      "nombre": "CAMPERA PUFFER JUNO BLACK",
+      "precio": 124654
+    },
+    {
+      "id": 9,
+      "img": "img/CAMPERA_PUFFER_HARMONY_ALMOND_MILK.webp",
+      "nombre": "CAMPERA PUFFER HARMONY ALMOND",
+      "precio": 98242
+    },
+    {
+      "id": 10,
+      "img": "img/CAMPERA_PUFFER_HOLY_FOREST.webp",
+      "nombre": "CAMPERA PUFFER HOLY FOREST",
+      "precio": 133722
+    },
+    {
+      "id": 11,
+      "img": "img/CAMPERA_INFLADA_SIRIUS_BLUE.webp",
+      "nombre": "CAMPERA INFLADA SIRIUS BLUE",
+      "precio": 107091
+    },
+    {
+      "id": 12,
+      "img": "img/CAMPERA_CROFT_BLACK.webp",
+      "nombre": "CAMPERA CROFT BLACK",
+      "precio": 130990
+    }
+  ]
+}
